@@ -43,7 +43,7 @@ public class BookServiceImpl implements BookService {
 	@Override
 	public void triggerCreatePostCommit(final Book book) {
 		
-		// Lookup book to make sure we are using the enitity manager/repository
+		// Lookup book to make sure we are using the entity manager/repository
 		lookupBookById(book.getId());
 		
 		TransactionSynchronizationManager.registerSynchronization(new TransactionSynchronizationAdapter() {

@@ -3,7 +3,7 @@ package org.springframework.issues;
 public final class Reference<T> {
 
     public static <X> Reference<X> create(final X referred) {
-        return new Reference<X>(referred);
+        return new Reference<>(referred);
     }
     
     private T referred;

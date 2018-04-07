@@ -13,7 +13,7 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.env.Environment;
 
 @Configuration
-@ComponentScan(basePackages = { "com.springtest" })
+@ComponentScan(basePackages = { "org.springframework.issues" })
 @PropertySource(value = { "classpath:application.properties" })
 @ImportResource(value="classpath*:applicationContext.xml")
 @EnableCaching
