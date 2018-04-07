@@ -16,7 +16,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = {AppConfig.class})
+@ContextConfiguration(classes = { AppConfig.class })
 public class ReproTests {
 
     private static final Logger LOG = getLogger(ReproTests.class);
